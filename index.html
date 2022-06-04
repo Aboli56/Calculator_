@@ -6,30 +6,40 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <div class="banner">
-        <div class="navbar">
-            <b>Ⲇ!Ⲏⲟⲙⲉ</b>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">BEDROOM</a></li>
-            <li><a href="#">KICHEN</a></li>
-            <li><a href="#">DINING</a></li>
-            <li><a href="#">BACKYARD</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <h1>DESIGN YOUR HOUSE</h1>
-        <p>
-            Make your home as comfortable and attractive as possible and then get on with living.<br> There's more to life than decorating.
-        </p>
-    <div>
-        <button type="button"><span></span>WATCH MORE</button>
-        <button type="button"><span></span>SUSCRIBE</button>
+    <div class="wrap">
+        <form name="cal">
+            <h2><b>- CALCULATOR -</b></h2>
+            <input type="text" name="display">
+            <br><br>
 
-    </div>
-    </div>
+            <input type="button" value="9" onclick="cal.display.value+='9'">
+            <input type="button" value="8" onclick="cal.display.value+='8'">
+            <input type="button" value="7" onclick="cal.display.value+='7'">
+            <input type="button" value="+" onclick="cal.display.value+='+'">
+            <br><br>
 
-</div>
-</div>
+            <input type="button" value="6" onclick="cal.display.value+='6'">
+            <input type="button" value="5" onclick="cal.display.value+='5'">
+            <input type="button" value="4" onclick="cal.display.value+='4'">
+            <input type="button" value="-"  onclick="cal.display.value+='-'">
+            <br><br>
+
+            <input type="button" value="3" onclick="cal.display.value+='3'">
+            <input type="button" value="2" onclick="cal.display.value+='2'">
+            <input type="button" value="1" onclick="cal.display.value+='1'">
+            <input type="button" value="*" onclick="cal.display.value+='*'">
+            <br><br>
+
+            <input type="button" value="0" onclick="cal.display.value+='0'">
+            <input type="button" value="/" onclick="cal.display.value+='/'">
+            <input type="button" value="%" onclick="cal.display.value+='%'">
+            <input type="button" value="=" onclick="cal.display.value =eval(cal.display.value)">
+            <br><br>
+            
+            <input type="button" value="D E L E T E" onclick="cal.display.value=''" id="del">
+
+        </form>
+    </div>
+    
 </body>
 </html>
